@@ -46,15 +46,18 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center"> 
+                <div class="col-12 col-sm-3 align-self-center"> 
                     <img src="img/logo.png" class=""image-fluid/>
+                </div>
+                <div class="col-sm-3 order-sm-last">
+                    <a href="#reserve" class="btn btn-warning">Reserve a Table</a>
                 </div>
             </div>
         </div>
     </header>
 
     <div class="container">
-        <div class="row  row_content align-items-center">
+        <div class="row row_content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
@@ -62,8 +65,12 @@
                 <div class="media">
                     <img src="img/uthappizza.png" class="d-flex mr-3 img-thumbnail align-self-center" alt="Uthappizza"/>
                     <div class="media-body">
-                        <h2>Uthappizza</h2>
-                        <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                        <h2>
+                            Uthappizza
+                            <span class="badge badge-danger">HOT</span>
+                            <span class="badge badge-pill badge-secondary">4.99</span>
+                        </h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>
                 
@@ -71,31 +78,87 @@
         </div>
 
 
-        <div class="row align-items-center">
+        <div class="row row_content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <img src="img/buffet.png" class="order-lg-last d-flex mr-3 img-thumbnail align-self-center" alt="Buffet"/>
+                    <div class="media-body">
+                        <h2>
+                            Weekend Grand Buffet
+                            <span class="badge badge-danger">NEW</span>
+                        </h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="row align-items-center">
-            <div class="col-12 col-sm-4 order-sm-first col-md-3">
+        <div class="row row_content align-items-center">
+            <div class="col-12 col-sm-4 order-lg-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col col-sm col-md">
                 <div class="media">
-                    <img src="img/alberto.png" class="d-flex mr-3 img-thumbnail align-self-center" alt="Uthappizza"/>
+                    <img src="img/alberto.png" class="d-flex mr-3 img-thumbnail align-self-center" alt="Alberto Somayya"/>
                     <div class="media-body">
                         <h2 class="mt-0">Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
-                        <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
                     </div>
                 </div>
                 
             </div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 align-self-center">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-secondary">Reserve a table</h3>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group row">
+                                <p class="col-md-2 col-sm-12">
+                                    Number of Guests
+                                </p>
+                                <div class="col-md-10 col-sm-12">
+                                    <input type="radio" name="guestNo" class="ml-2 mr-1" value="1"/>1
+                                    <input type="radio" name="guestNo" class="ml-2 mr-1" value="2"/>2
+                                    <input type="radio" name="guestNo" class="ml-2 mr-1" value="3"/>3
+                                    <input type="radio" name="guestNo" class="ml-2 mr-1" value="4"/>4
+                                    <input type="radio" name="guestNo" class="ml-2 mr-1" value="5"/>5
+                                    <input type="radio" name="guestNo" class="ml-2 mr-1" value="6"/>6
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <p class="col-md-2 col-sm-12">
+                                    Date and Time
+                                </p>
+                                <div class="col-md-10  row">
+                                    <div class="col-md-6 col-sm-12" >
+                                        <input type="text" class="form-control textbook-n" name="date" placeholder="Date" onfocus="(this.type='date')">
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <input type="text" class="form-control textbook-n" name="time" placeholder="Time" onfocus="(this.type='time')">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <p class="col-2">
+                                    
+                                </p>
+                                <div class="col-10">
+                                    <input type="button" id="reserve" name="reserve" value="Reserve" class="btn btn-primary">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
         </div>
     </div>
 
