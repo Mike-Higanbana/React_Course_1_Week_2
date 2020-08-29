@@ -35,3 +35,7 @@ body{
 .navbar-dark{
 	background-color: #512DAB;
 }
+
+#reserve_form{
+	padding-bottom: 30px;
+}
